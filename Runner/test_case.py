@@ -3,21 +3,17 @@
 from SourceCode.test_LoginMode import Login
 from SourceCode.test_PaymentProcessMode import PayMode
 from tools.test_basic import Basic
+from tools.test_db_connect import db_conn
 
 import pytest
-import csv
 
-def getCsvData(filepath):
-    f = open(filepath, encoding='UTF-8')
-    next(f)
-    r = csv.reader(f)
-    return list(r)
+db=db_conn()
 
 str_URL = "http://demo.lovesgou.com/"
-csvDataCode = getCsvData(r"D:\lovesgou\testcase\CodeTest.CSV")
-csvDataID = getCsvData(r"D:\lovesgou\testcase\IDPasswordTest.CSV")
-csvCodeLoginSuccess = getCsvData(r"D:\lovesgou\testcase\CodeLoginSuccess.CSV")
-csvIDLoginSuccess = getCsvData(r"D:\lovesgou\testcase\IDLoginSuccess.CSV")
+csvDataCode = db.check_table_all("codetest")
+csvDataID = db.check_table_all("idpasswordtest")
+csvCodeLoginSuccess = db.check_table_all("codeloginsuccess")
+csvIDLoginSuccess = db.check_table_all("idloginsuccess")
 
 class Test_Class():
 

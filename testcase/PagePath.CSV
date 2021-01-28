@@ -18,15 +18,9 @@
 请输入正确的手机号格账号密码登录,"/html/body/div[2]/div/div[2]/div[3]/div/div[1]/p"
 请输入正确的验证码格式,"/html/body/div[2]/div/div[2]/div[2]/div[2]/p"
 密码不能小于6位且不能大于20位,"/html/body/div[2]/div/div[2]/div[3]/div/div[2]/p"
-,
-====================================================支付流程==============================================================,
-,
 登录之后的首页按钮,"/html/body/div/div[1]/div/div[1]/ul/li[1]/a"
 全部商品分类,"/html/body/div/div[5]/div[3]/div/div[1]/div/div[1]/div[2]/div/div[{}]/div/div/a"
 首页的特惠产品按钮,"/html/body/div[1]/div[5]/div[1]/div/div[1]/div/div[2]/ul/li[1]/a"
-# 商品分类一级列表,"/html/body/div[3]/div/div/div[1]/div/div/div[1]/div[1]/ul"
-# 商品分类二级列表,"/html/body/div[3]/div/div/div[1]/div/div/div[2]/div[1]/ul"
-# 商品分类三级列表,"/html/body/div[3]/div/div/div[1]/div/div/div[3]/div[1]/ul"
 商品分类一级,"/html/body/div[3]/div/div/div[1]/div/div/div[1]/div[1]/ul/a[1]"
 商品分类二级,"/html/body/div[3]/div/div/div[1]/div/div/div[2]/div[1]/ul/a[1]"
 商品分类三级,"/html/body/div[3]/div/div/div[1]/div/div/div[3]/div[1]/ul/a[1]"
@@ -71,9 +65,6 @@
 更多地址按钮,"/html/body/div[3]/div[2]/button"
 地址的列表,"/html/body/div[3]/div[2]/ul"
 收货人信息选中框,"/html/body/div[3]/div[2]/ul/li[{}]/label/input"
-,
-====================================================登录后台==============================================================,
-,
 用户名,"//*[@id='username']"
 密码,"//*[@id='password']"
 验证码,"//*[@id='tel_code']"

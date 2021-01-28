@@ -26,7 +26,7 @@ def get_file_sha256(filname):
 
 if __name__ == '__main__':
     # file_name = r"D:\tool\BurpSuite v2.1\burp_suite_pro_v2020.12\burpsuite_pro_v2020.12.jar"
-    file_name = r"E:\CentOS-7-x86_64-DVD-2003.iso"
+    file_name = r"E:\mysql\mysql-8.0.23-winx64.zip"
     # file_name = r"F:\CentOS-7-x86_64-DVD-2003.iso"
     file_md5 = get_file_md5(file_name)
     file_sha256 = get_file_sha256(file_name)

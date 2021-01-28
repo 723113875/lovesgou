@@ -2687,3 +2687,31 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1611826371818	geckodriver	INFO	Listening on 127.0.0.1:58115
+1611826372126	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilewnNWVA"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611826375005	Marionette	INFO	Listening on port 58120
+1611826375444	Marionette	WARN	TLS certificate errors will be ignored for this session
+1611826375459	Marionette	ERROR	[21] No reply from Marionette:Register
+1611827761189	geckodriver	INFO	Listening on 127.0.0.1:58603
+1611827761690	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilekySH9a"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611827763119	Marionette	INFO	Listening on port 58608
+1611827763316	Marionette	WARN	TLS certificate errors will be ignored for this session
+1611827763333	Marionette	ERROR	[18] No reply from Marionette:Register
+1611827785691	Marionette	ERROR	[38] No reply from Marionette:Register
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1611827832927	Marionette	ERROR	[40] No reply from Marionette:Register
+1611827873888	Marionette	INFO	Stopped listening on port 58608
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8088, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
