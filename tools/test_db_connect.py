@@ -4,7 +4,7 @@ class db_conn():
     def __init__(self):
         self.mydb = pymysql.connect(
             host='127.0.0.1',
-            user='sbroot',
+            user='root',
             passwd='1234',
             database='lovesgou_database'
         )
