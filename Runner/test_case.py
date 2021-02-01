@@ -8,7 +8,6 @@ from tools.test_db_connect import db_conn
 import pytest
 
 db=db_conn()
-
 str_URL = "http://demo.lovesgou.com/"
 csvDataCode = db.check_table_all("codetest")
 csvDataID = db.check_table_all("idpasswordtest")

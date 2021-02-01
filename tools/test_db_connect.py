@@ -2,11 +2,21 @@ import pymysql
 
 class db_conn():
     def __init__(self):
+        import configparser
+
+        conf = configparser.ConfigParser()
+        conf.read('database.ini', encoding='utf-8')
+
+        host = conf.get('sql', 'host')
+        user = conf.get('sql', 'user')
+        password = conf.get('sql', 'password')
+        database = conf.get('sql', 'database')
+
         self.mydb = pymysql.connect(
-            host='127.0.0.1',
-            user='root',
-            passwd='1234',
-            database='lovesgou_database'
+            host=host,
+            user=user,
+            passwd=password,
+            database=database
         )
         self.mycursor = self.mydb.cursor()
 
