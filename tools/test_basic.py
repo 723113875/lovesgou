@@ -34,7 +34,7 @@ class Basic(object):
 
     # 显示等待定位元素
     def findElement(self, value):
-        element = WebDriverWait(self.driver, 50, 2).until(
+        element = WebDriverWait(self.driver, 10, 2).until(
             EC.presence_of_element_located(value)
         )
         return element

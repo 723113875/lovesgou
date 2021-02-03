@@ -109,6 +109,8 @@ class PayMode(TestcaseElement):
     # 提交订单按钮
     def placeOrder(self):
         self.dr.driver.refresh()
+        self.windowScrrollBy()
+        time.sleep(2)
         self.dr.buttonClick(self.xpathPlaceOrder)
 
     # 余额支付发送送验证码
@@ -128,13 +130,17 @@ class PayMode(TestcaseElement):
 
     #进入后台系统
     def enterBackstage(self, value, password):
-        self.dr.inputMessage(self.xpathBackstageUser, value)
-        self.dr.inputMessage(self.xpathBackstagePwd, password)
-        self.dr.inputMessage(self.xpathBackstageCode, "8888")
-        self.dr.buttonClick(self.xpathLoginBtn)
-        self.dr.buttonClick(self.xpathSysBtn)
-        self.dr.buttonClick(self.xpathSysDaily)
-        self.dr.buttonClick(self.xpathNoteDaily)
+        try:
+            self.dr.inputMessage(self.xpathBackstageUser, value)
+            self.dr.inputMessage(self.xpathBackstagePwd, password)
+            self.dr.inputMessage(self.xpathBackstageCode, "8888")
+            self.dr.buttonClick(self.xpathLoginBtn)
+        except:
+            print("用户已登录")
+        finally:
+            self.dr.buttonClick(self.xpathSysBtn)
+            self.dr.buttonClick(self.xpathSysDaily)
+            self.dr.buttonClick(self.xpathNoteDaily)
 
     # 退出后台
     def exitBackstage(self):
@@ -148,7 +154,7 @@ class PayMode(TestcaseElement):
         self.dr.WinHandle(1)
         self.dr.inputMessage(self.xpathInputCode, value)
         self.dr.WinHandle(0)
-        self.exitBackstage()
+        # self.exitBackstage()
         self.dr.driver.close()
 
     #立即支付按钮

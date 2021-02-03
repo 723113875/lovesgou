@@ -35,7 +35,6 @@ class Test_Class():
         assert self.eleText_01 == self.eleText_02
         self.c.allWares()
         self.c.chooseWares()
-        # self.c.waresSort()
         self.c.windowScrrollBy()
         self.c.clickWare(self.b.xpathWaresMag, 1, 2)
         self.c.joinShopCar()
@@ -123,5 +122,5 @@ class Test_Class():
     def teardown_class(self):
         self.a.quit()
 
-if __name__ == "__main__":
-    pytest.main([__file__, "--reruns","2"])
+# if __name__ == "__main__":
+#     pytest.main([__file__, "--reruns","2"])

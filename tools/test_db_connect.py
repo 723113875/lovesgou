@@ -3,9 +3,12 @@ import pymysql
 class db_conn():
     def __init__(self):
         import configparser
+        import os
+        proDir = os.path.split(os.path.realpath(__file__))[0]
+        configPath = os.path.join(proDir, "database.ini")
 
         conf = configparser.ConfigParser()
-        conf.read('database.ini', encoding='utf-8')
+        conf.read(configPath, encoding='utf-8')
 
         host = conf.get('sql', 'host')
         user = conf.get('sql', 'user')
