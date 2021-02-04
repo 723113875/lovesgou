@@ -110,7 +110,7 @@ class PayMode(TestcaseElement):
     def placeOrder(self):
         # self.dr.driver.refresh()
         self.windowScrrollBy()
-        time.sleep(2)
+        time.sleep(3)
         self.dr.buttonClick(self.xpathPlaceOrder)
 
     # 余额支付发送送验证码

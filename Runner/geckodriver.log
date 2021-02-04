@@ -2910,3 +2910,26 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1612342459624	geckodriver	INFO	Listening on 127.0.0.1:60479
 1612342460172	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofileCoiJCl"
 *** You are running in headless mode.
+1612425673962	geckodriver	INFO	Listening on 127.0.0.1:56944
+1612425674515	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile7A8s0D"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612425675964	Marionette	INFO	Listening on port 56949
+1612425676163	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612425676178	Marionette	ERROR	[21] No reply from Marionette:Register
+1612425716103	Marionette	ERROR	[38] No reply from Marionette:Register
+1612425811429	geckodriver	INFO	Listening on 127.0.0.1:57089
+1612425811963	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile0OtFlv"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612425814643	Marionette	INFO	Listening on port 57094
+1612425814734	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612425814750	Marionette	ERROR	[18] No reply from Marionette:Register
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1612425835979	Marionette	ERROR	[38] No reply from Marionette:Register
+1612425839378	Marionette	INFO	Stopped listening on port 57094
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
