@@ -108,7 +108,7 @@ class PayMode(TestcaseElement):
 
     # 提交订单按钮
     def placeOrder(self):
-        self.dr.driver.refresh()
+        # self.dr.driver.refresh()
         self.windowScrrollBy()
         time.sleep(2)
         self.dr.buttonClick(self.xpathPlaceOrder)
