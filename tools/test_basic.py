@@ -11,16 +11,16 @@ import random
 class Basic(object):
     def __init__(self):
         # !-----------------------------------------------无界面化---------------------------------------------! #
-        # self.arg = webdriver.FirefoxOptions()
+        self.arg = webdriver.FirefoxOptions()
         # # self.arg = webdriver.ChromeOptions()
-        # self.arg.add_argument('--headless')  # 无界面化.
-        # self.arg.add_argument('--disable-gpu')    # 配合上面的无界面化.不显示自动化控制的提示
-        # self.driver = webdriver.Firefox(options=self.arg)    #options=self.arg
+        self.arg.add_argument('--headless')  # 无界面化.
+        self.arg.add_argument('--disable-gpu')    # 配合上面的无界面化.不显示自动化控制的提示
+        self.driver = webdriver.Firefox(options=self.arg)    #options=self.arg
         # # self.driver = webdriver.Chrome(options=self.arg)    #options=self.arg
         # !-----------------------------------------------打开浏览器-------------------------------------------! #
         # self.driver = webdriver.Ie()
         # self.driver = webdriver.Chrome()
-        self.driver = webdriver.Firefox()
+        # self.driver = webdriver.Firefox()
 
     def openWeb(self, URL):
         self.driver.maximize_window()
